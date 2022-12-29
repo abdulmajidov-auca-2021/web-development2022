@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Abdulamir CV</title>
+</head>
+
+<body>
+    <div class="section">
+        <h1>Abdulamir Abdulmajidov</h1>
+        <p><strong>Software Engineer</strong></p>
+    </div>
+
+    <div class="section">
+        <img src="https://cdn2.iconfinder.com/data/icons/avatars-99/62/avatar-370-456322-512.png" width="17%"
+            height="17%" />
+        <hr>
+    </div>
+
+    <div class="section">
+        <h2><i>Summary</i></h2>
+
+        <p>A future Software Engineer who has a burning desire to make changes in the IT sphere.</p>
+    </div>
+
+    <div class="section">
+        <h2><i>Experience</i></h2>
+
+        <ul>
+            <li><b>Web Developper - Matrix IT Company</b> | 2020 - present</li>
+            <p>Developped different types of websites for customers.</p>
+            <li><b>Graphic Designer - American Space</b> | 2021 - 2022</li>
+            <p>Created Instagram posts using Corel Draw & Canva.</p>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2><i>Skills</i></h2>
+
+        <table border="2">
+            <tr>
+                <th align="center">Hard Skills</th>
+                <td align="center">HTML</td>
+                <td align="center">CSS</td>
+                <td align="center">JS</td>
+            </tr>
+
+            <tr>
+                <th align="center">Soft Skills</th>
+                <td align="center">Creativity</td>
+                <td align="center">Flexibility</td>
+                <td align="center">Hard-working</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2><i>Contacts</i></h2>
+        <p>
+            <a href="account1 link" target="_blank"> LinkedIn</a>
+            |
+            <a href="account2 link" target="_blank"> Github </a>
+        </p>
+    </div>
+
+    <div class="section">
+        <h2><i>Write me a message</i></h2>
+        <form>
+            <input placeholder="Name" required /><br>
+            <input placeholder="Email" required /><br>
+            <textarea placeholder="Message" required></textarea><br>
+            <input type="submit" value="SEND" />
+    </div>
+
+    <div class="copyright">
+        &copy; Abdulamir
+    </div>
+    </form>
+</body>
+
+</html>

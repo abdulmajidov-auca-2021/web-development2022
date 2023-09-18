@@ -1,0 +1,36 @@
+body {
+    background: rgb(204, 229, 255);
+    font-size: 1.15em;
+    text-align: left;
+    font-family: "Times New Roman", serif;
+}
+
+#title {
+    color: rgb(186, 133, 9);
+    font-weight: bold;
+}
+
+.subtitle {
+    color: rgb(200, 148, 30);
+} 
+
+.image1 {
+    height: 300px;
+    width: 600px;
+}
+.image2 {
+    height: 100px;
+    width: 210px;
+
+    background: steelblue;
+    background-size: cover;
+}
+
+.link {
+    text-decoration: underline;
+}
+
+.italic {
+    font-style: italic;
+    font-weight: bold;
+}

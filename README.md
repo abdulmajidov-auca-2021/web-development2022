@@ -2,5 +2,5 @@
 
 Abdulamir Abdulmajidov 
 
-Junior Frontend developper
+ Frontend developper
 

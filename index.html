@@ -6,15 +6,27 @@
 	<title>My Website</title>
 
 	<style>
-		.toggle {
-			/* border: 1px solid grey; */
-			padding: 10px;
-			cursor: pointer;
-			background-color: lightgray;
+		.toggle.lamp-wrapper {
+			/* Styles for elements with both "toggle" and "lamp-wrapper" classes */
+			background-color: yellow;
+			/* Example style */
 		}
 
 		.panel {
 			display: none;
+		}
+
+		/* Descendant combinator to style h2 elements under #about */
+		#about h2 {
+			color: blue;
+			/* Example style */
+		}
+
+		/* Selector list to style .subtitle and h2#about with the same styles */
+		.subtitle,
+		h2#about {
+			font-weight: bold;
+			text-decoration: underline;
 		}
 	</style>
 </head>

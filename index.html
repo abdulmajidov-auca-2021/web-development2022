@@ -6,119 +6,31 @@
 	<title>My Website</title>
 
 	<style>
-		.toggle.lamp-wrapper {
-			/* Styles for elements with both "toggle" and "lamp-wrapper" classes */
-			background-color: yellow;
-			/* Example style */
+		/* Compound Selector */
+		.para-text.list-item {
+			font-weight: bold;
+			color: red;
 		}
 
-		.panel {
-			display: none;
-		}
-
-		/* Descendant combinator to style h2 elements under #about */
-		#about h2 {
+		/* Descendant Combinator */
+		ul li {
+			list-style-type: square;
 			color: blue;
-			/* Example style */
 		}
 
-		/* Selector list to style .subtitle and h2#about with the same styles */
+		/* Selector List */
 		.subtitle,
-		h2#about {
+		h2#about,
+		.para-text {
 			font-weight: bold;
 			text-decoration: underline;
+			color: black;
 		}
 	</style>
 </head>
 
 <body>
-
-	<div class="lamp-wrapper">
-		<div class="lamp-rope"></div>
-		<div class="lamp">
-		</div class="lamp-part -top">
-		<div class="lamp-part -top-part"></div>
-		<div class="lamp-part -top-part right"></div>
-	</div>
-	<div class="lamp-part-body"></div>
-	<div class="lamp-part-body right"></div>
-	<div class="lamp-part -bottom"></div>
-	<div class="blub"></div>
-	</div>
-	<div class="wall-light-shadow"></div>
-	</div>
-	<form oninput="body .setAttribute('data-light', slider.value)">
-		<div class="icon sun">
-			<div class="ray"></div>
-			<div class="ray"></div>
-			<div class="ray"></div>
-			<div class="ray"></div>
-			<div class="ray"></div>
-			<div class="ray"></div>
-			<div class="ray"></div>
-			<div class="ray"></div>
-		</div>
-		<input type="range" id="slider" value="0" min="0" max="10">
-	</form>
-
-	<h1 id="title">My Website</h1>
-
-	<a href="#about">Go about</a>
-
-	<div class="toggle" id="asdf" onclick="toggle()">TAP SO SEE MORE</div>
-	<div class="panel" id="panel">
-		<p class="para-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua.Duis aute irure dolor in reprehenderit in voluptate velit
-			esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in
-			reprehenderit
-			in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in
-			reprehenderit
-			in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in
-			reprehenderit
-			in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua.Duis aute irure dolor in reprehenderit in voluptate velit
-			esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in
-			reprehenderit
-			in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in
-			reprehenderit
-			in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in
-			reprehenderit
-			in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua.Duis aute irure dolor in reprehenderit in voluptate velit
-			esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in
-			reprehenderit
-			in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in
-			reprehenderit
-			in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in
-			reprehenderit
-			in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	</div>
+	<!-- Your existing HTML content -->
 
 	<h2 class="subtitle">About Me</h2>
 
@@ -170,7 +82,6 @@
 		</tbody>
 	</table>
 
-
 	<img class="image2" src="../img.jpg">
 
 	<h2 class="subtitle">Contact Us</h2>
@@ -180,19 +91,7 @@
 		<input type="email" placeholder="Email" class="form-input">
 		<textarea></textarea>
 		<button>Submit</button>
-
-		<script>
-			function toggle() {
-				if (document.getElementById("panel").style.display == "block") {
-					document.getElementById("panel").style.display = "none"
-				} else {
-					document.getElementById("panel").style.display = "block"
-				}
-			}
-		</script>
-
 	</form>
-
 
 </body>
 

@@ -4,55 +4,109 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="firstWebsite.css">
 	<title>My Website</title>
+
+	<style>
+		.toggle {
+			/* border: 1px solid grey; */
+			padding: 10px;
+			cursor: pointer;
+			background-color: lightgray;
+		}
+
+		.panel {
+			display: none;
+		}
+	</style>
 </head>
 
 <body>
 
+	<div class="lamp-wrapper">
+		<div class="lamp-rope"></div>
+		<div class="lamp">
+		</div class="lamp-part -top">
+		<div class="lamp-part -top-part"></div>
+		<div class="lamp-part -top-part right"></div>
+	</div>
+	<div class="lamp-part-body"></div>
+	<div class="lamp-part-body right"></div>
+	<div class="lamp-part -bottom"></div>
+	<div class="blub"></div>
+	</div>
+	<div class="wall-light-shadow"></div>
+	</div>
+	<form oninput="body .setAttribute('data-light', slider.value)">
+		<div class="icon sun">
+			<div class="ray"></div>
+			<div class="ray"></div>
+			<div class="ray"></div>
+			<div class="ray"></div>
+			<div class="ray"></div>
+			<div class="ray"></div>
+			<div class="ray"></div>
+			<div class="ray"></div>
+		</div>
+		<input type="range" id="slider" value="0" min="0" max="10">
+	</form>
+
 	<h1 id="title">My Website</h1>
 
 	<a href="#about">Go about</a>
-	<p class="para-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua.Duis aute irure dolor in reprehenderit in voluptate velit
-		esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit
-		in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit
-		in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit
-		in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua.Duis aute irure dolor in reprehenderit in voluptate velit
-		esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit
-		in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit
-		in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit
-		in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua.Duis aute irure dolor in reprehenderit in voluptate velit
-		esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit
-		in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit
-		in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit
-		in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<div class="toggle" id="asdf" onclick="toggle()">TAP SO SEE MORE</div>
+	<div class="panel" id="panel">
+		<p class="para-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.Duis aute irure dolor in reprehenderit in voluptate velit
+			esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in
+			reprehenderit
+			in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in
+			reprehenderit
+			in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in
+			reprehenderit
+			in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.Duis aute irure dolor in reprehenderit in voluptate velit
+			esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in
+			reprehenderit
+			in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in
+			reprehenderit
+			in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in
+			reprehenderit
+			in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.Duis aute irure dolor in reprehenderit in voluptate velit
+			esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in
+			reprehenderit
+			in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in
+			reprehenderit
+			in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in
+			reprehenderit
+			in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
 
 	<h2 class="subtitle">About Me</h2>
 
@@ -114,6 +168,16 @@
 		<input type="email" placeholder="Email" class="form-input">
 		<textarea></textarea>
 		<button>Submit</button>
+
+		<script>
+			function toggle() {
+				if (document.getElementById("panel").style.display == "block") {
+					document.getElementById("panel").style.display = "none"
+				} else {
+					document.getElementById("panel").style.display = "block"
+				}
+			}
+		</script>
 
 	</form>
 

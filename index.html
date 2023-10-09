@@ -1,102 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" type="text/css" href="firstWebsite.css">
-	<title>My Website</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>matrix.com</title>
 
 	<style>
-		/* Compound Selector */
-		.para-text.list-item {
-			font-weight: bold;
-			/* Example style */
-			color: green;
-			/* Example style */
+		* {
+			margin: 0px;
+			padding: 0px;
 		}
 
-		/* Descendant Combinator */
-		ul li {
-			list-style-type: square;
-			color: blue;
+		body {
+			height: 100%;
 		}
 
-		/* Selector List */
-		.subtitle,
-		h2#about,
-		.para-text {
-			font-weight: bold;
-			text-decoration: underline;
-			color: black;
+		header {
+			background-color: black;
+			color: white;
+			padding: 10px;
+			display: flex;
+			gap: 100px;
+			font-size: 25px;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		footer {
+			background-color: black;
+			align-content: center;
+			color: white;
+			padding: 10px;
+		}
+
+		.hero {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			color: white;
+			background-image: url(https://img.freepik.com/free-photo/abstract-digital-grid-black-background_53876-97647.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1696809600&semt=ais);
+			background-size: cover;
+		}
+
+		.img-header {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100px;
+			max-width: 900px;
+		}
+
+		.hero h1 {
+			font-size: 70px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+		.hero div {
+			font-size: 28px;
+			/* padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 10px;
+            padding-right: 10px; */
+			padding: 40px 20px 40px 20px;
+		}
+
+		.menu-items {
+			padding-right: 20px;
+			display: flex;
+			gap: 50px;
+		}
+
+		button {
+			font-size: 28px;
+			padding: 15px 20px;
+			border-radius: 15px;
+			border: none;
+			background-color: darkgreen;
+			color: white;
+			cursor: pointer;
+		}
+
+		button:hover {
+			background-color: forestgreen;
 		}
 	</style>
 </head>
 
 <body>
-	<!-- Your existing HTML content -->
+	<header>
+		<div>
+			<a><img src="logoJan.png" height="100px"></a>
+		</div>
+		<div class="menu-items">
+			<a>127.0.0.1</a>
+			<a>About Us</a>
+			<a>Products</a>
+			<a>Customers</a>
+			<a>Contact Us</a>
+		</div>
 
-	<h2 class="subtitle">About Me</h2>
+	</header>
+	<main>
+		<section class="hero">
+			<div class="img-header">
+				<h1>MATRIX IT COMPANY</h1>
+				<div>Matrix is a new IT company founded in July 2021. The company develops safe and high-tech business
+					solutions. Activity: Development of innovative IT solutions for business. Creation of secure
+					software products, web applications, and systems, as well as providing consulting services in the
+					field of information technology, helping companies optimize operations, increase efficiency, graphic
+					design services, and ensure data protection.
+				</div>
+				<button>Explore our Services</button>
+			</div>
+		</section>
 
-	<img class="image1" src="../img.jpg">
 
-	<h2 id="about">About</h2>
-	<p class="para-text">Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		<span class="italic">Lorem ipsum dolor sit amet,</span> consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat.
-
-		Cillum dolore eu fugiat nulla , pariatur:
-
-	<ul>
-		<li class="list-item">Excepteur sint occaecat</li>
-		<ol>
-			<li class="list-item">My numbered list item</li>
-		</ol>
-	</ul>
-	</p>
-	<p class="para-text list-item">This paragraph uses the compound selector and will have bold text and a green color.
-	</p>
-
-	<h2 class="subtitle">Services</h2>
-
-	<a href="http://www.google.com" class="link">Click here to Google</a>
-
-	<table border="1">
-		<thead>
-			<tr>
-				<td>Lorem</td>
-				<td>Ipsum</td>
-				<td>Dolor</td>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Sit</td>
-				<td>Amet</td>
-				<td>Consectetur</td>
-			</tr>
-			<tr>
-				<td>Adipisicing</td>
-				<td>Elit</td>
-				<td>Sed</td>
-			</tr>
-
-		</tbody>
-	</table>
-
-	<img class="image2" src="../img.jpg">
-
-	<h2 class="subtitle">Contact Us</h2>
-
-	<form>
-		<input type="text" placeholder="Full Name" class="form-input">
-		<input type="email" placeholder="Email" class="form-input">
-		<textarea></textarea>
-		<button>Submit</button>
-	</form>
-
+	</main>
+	<footer>
+		Copyright &copy; 2023, All rights reserved
+	</footer>
 </body>
 
 </html>

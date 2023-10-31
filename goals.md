@@ -1,8 +1,8 @@
-1. What is the purpose of the Matrix Website?
+# 1. What is the purpose of the Matrix Website?
 
 It is a businesses website that aims to promote its services and to raise awareness about its existence.
 
-2. Who is your target audience?
+# 2. Who is your target audience?
 
 The target audience the Company is:
 
@@ -21,14 +21,14 @@ Additionally, depending on the startup's focus and offerings:
 - E-commerce and retail businesses
 - Manufacturers and industrial companies
 
-3. What is the call to action (CTA)?
+# 3. What is the call to action (CTA)?
 
 The "Call to Action" (CTA) button on your website serves a crucial purpose by inviting 
 visitors to explore more information. It is strategically placed to guide users deeper 
 into your website, encouraging them to learn about your products, services, or company 
 in greater detail.
 
-4. What is your Unique Selling Proposition?
+# 4. What is your Unique Selling Proposition?
 
 As mentioned on the website, it is:
 

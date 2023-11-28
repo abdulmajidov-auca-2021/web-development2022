@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Matrix IT company</title>
 
 	<style>
@@ -14,6 +14,8 @@
 
 		body {
 			height: 100%;
+			overflow-x: hidden;
+			/* Ikam ima navud, dijat tar pale ot vud */
 		}
 
 		header {
@@ -106,7 +108,7 @@
 			padding-left: 200px;
 			padding-right: 200px;
 			color: white;
-			background-image: url(gradient-navy-blue-digital-grid-wallpaper.jpg)
+			background-image: url(gradient-navy-blue-digital-grid-wallpaper.jpg);
 		}
 
 		.page2 p {
@@ -140,7 +142,6 @@
 			background-color: darkblue;
 			border-radius: 100px;
 			margin: 20px;
-
 		}
 
 		.reverse {
@@ -152,15 +153,57 @@
 			padding: 50px;
 			margin: 20px;
 		}
+
+		.links-container {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			gap: 30px;
+			position: absolute;
+			top: 0;
+			left: 100%;
+			width: 100%;
+			height: 100%;
+			background-color: black;
+			color: #fff;
+			transition: all 0.6s;
+		}
+
+		.show {
+			left: 0px;
+		}
+
+		.menu {
+			border: 1px solid #fff;
+			border-radius: 4px;
+			cursor: pointer;
+			position: relative;
+			z-index: 7;
+			margin-right: 20px;
+		}
+
+		.line {
+			width: 40px;
+			height: 1px;
+			margin: 10px;
+			background-color: #fff;
+		}
+
+		@media (max-width: 400px) {
+			.text {
+				font-size: 12px;
+			}
+		}
 	</style>
 </head>
 
 <body>
 	<header>
 		<div>
-			<a><img src="matrixLogo.png" height="100px"></a>
+			<a><img src="matrixLogo.png" height="100px" /></a>
 		</div>
-		<div class="menu-items">
+		<div class="links-container">
 			<a>127.0.0.1</a>
 			<a>About Us</a>
 			<a href="goals.md">Goals</a>
@@ -168,14 +211,22 @@
 			<a>Contact Us</a>
 		</div>
 
+		<div class="menu">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
 	</header>
 	<main>
 		<section class="hero">
 			<div class="img-header">
-				<h1>MATRIX IT COMPANY</h1>
-				<div>Matrix, founded in July 2021, specializes in developing innovative and secure IT solutions,
-					including software, web applications, and systems, alongside providing IT consulting to enhance
-					business operations, efficiency, and data security.
+				<h1 class="text">MATRIX IT COMPANY</h1>
+				<div>
+					Matrix, founded in July 2021, specializes in developing innovative
+					and secure IT solutions, including software, web applications, and
+					systems, alongside providing IT consulting to enhance business
+					operations, efficiency, and data security.
 				</div>
 				<button>Explore More</button>
 			</div>
@@ -216,10 +267,14 @@
 				</svg>
 				<div>
 					<h3>Client-Centric Approach:</h3>
-					<p>We place our clients at the heart of everything we do. Our client-centric approach ensures that
-						every project is tailored to your unique needs and objectives. You'll have a dedicated account
-						manager by your side, providing personalized guidance and ensuring your satisfaction. We value
-						your feedback and continually refine our services to exceed your expectations.</p>
+					<p>
+						We place our clients at the heart of everything we do. Our
+						client-centric approach ensures that every project is tailored to
+						your unique needs and objectives. You'll have a dedicated account
+						manager by your side, providing personalized guidance and ensuring
+						your satisfaction. We value your feedback and continually refine
+						our services to exceed your expectations.
+					</p>
 				</div>
 			</div>
 
@@ -237,11 +292,13 @@
 				</svg>
 				<div>
 					<h3>Quality Assurance:</h3>
-					<p>Quality is our hallmark. We employ rigorous testing and quality control measures to deliver
-						solutions that meet the highest standards. Our commitment to quality extends beyond project
-						completion – we offer post-deployment support to address any issues promptly and ensure your
-						peace
-						of mind.</p>
+					<p>
+						Quality is our hallmark. We employ rigorous testing and quality
+						control measures to deliver solutions that meet the highest
+						standards. Our commitment to quality extends beyond project
+						completion – we offer post-deployment support to address any
+						issues promptly and ensure your peace of mind.
+					</p>
 				</div>
 			</div>
 
@@ -274,19 +331,30 @@
 				</svg>
 				<div>
 					<h3>Transparency and Communication:</h3>
-					<p>We believe that clear and open communication is the key to successful collaborations. MATRIX IT
-						Company keeps you informed every step of the way, with regular project updates and responsive
-						communication. We ensure you're in the know about your project's status and are always ready to
-						address your inquiries. Our commitment to transparency builds trust and ensures a smooth
-						partnership.</p>
+					<p>
+						We believe that clear and open communication is the key to
+						successful collaborations. MATRIX IT Company keeps you informed
+						every step of the way, with regular project updates and responsive
+						communication. We ensure you're in the know about your project's
+						status and are always ready to address your inquiries. Our
+						commitment to transparency builds trust and ensures a smooth
+						partnership.
+					</p>
 				</div>
 			</div>
 		</section>
-
 	</main>
-	<footer>
-		Copyright &copy; 2023, All rights reserved
-	</footer>
+	<footer>Copyright &copy; 2023, All rights reserved</footer>
 </body>
 
 </html>
+
+<script>
+	const menuTag = document.querySelector(".menu");
+	const links = document.querySelector(".links-container");
+
+	menuTag.addEventListener("click", function (e) {
+		links.classList.toggle("show");
+		console.log("clicked");
+	});
+</script>
